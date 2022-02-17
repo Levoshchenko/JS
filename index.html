@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Гамбургер</title>
+</head>
+
+<body>
+    <main>
+        <form action="">
+            <h1>Выбери себе бургер!</h1>
+            <h2>Какого размера он должен быть?</h2>
+            <div class="size">
+                <div class="size-big">
+                    <input class="checked" type="radio" name="size" value="big" data-id="big" id="sizeChoiceBig" onclick="checkedSize(0)"> Big </div>
+                <div class="size-small">
+                    <input class="checked" type="radio" name="size" value="small" data-id="small" id="sizeChoiceSmall" onclick="checkedSize(1)"> Small </div>
+                <p id="size__sum"></p> <span id="size__cal"></span></div>
+            <h2>Начинки на выбор</h2>
+            <div class="stf">
+                <div class="stf-cheese">
+                    <input class="checked" type="checkbox" name="stuffing-cheese" value="cheese" data-id="cheese" onclick="stuffing(0)"> Cheese
+                    <p id="size__sum__cheese"></p> <span id="size__cal__cheese"></span></div>
+                <div class="stf-salad">
+                    <input class="checked" type="checkbox" name="stuffing-salad" value="salad" data-id="salad" onclick="stuffing(1)"> Salad
+                    <p id="size__sum__salad"></p> <span id="size__cal__salad"></span> </div>
+                <div class="stf-potato">
+                    <input class="checked" type="checkbox" name="stuffing-potato" value="potato" data-id="potato" onclick="stuffing(2)"> Potato
+                    <p id="size__sum__potato"></p> <span id="size__cal__potato"></span> </div>
+            </div>
+        </form>
+        <br>
+        <button type="submit" id="btn_input">Приготовить!</button>
+        <div class="total">
+            <div id="total__sum"></div>
+            <div id="total__cal"></div>
+        </div>
+    </main>
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>
